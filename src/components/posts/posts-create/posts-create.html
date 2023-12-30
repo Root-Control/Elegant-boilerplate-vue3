@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="alert alert-success" role="alert" v-if="showAlert">
+    Success, added
+  </div>
+  <form @submit.prevent="createPost">
+    <div class="mb-3">
+      <input class="form-control" v-model="createPostDto.title" type="text" placeholder="Title">
+
+    </div>
+    <div class="mb-3">
+      <input class="form-control" v-model="createPostDto.body" type="text" placeholder="Body">
+
+    </div>
+    <div class="mb-3">
+      <input class="form-control" v-model="createPostDto.userId" type="number" placeholder="UserId">
+
+    </div>
+
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</div>

@@ -1,0 +1,18 @@
+{{msg}}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Content/Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="item in posts" :key="item.id">
+      <td>{{ item.id }}</td>
+      <td>{{ item.title }}</td>
+      <td>{{ item.body }}</td>
+    </tr>
+  </tbody>
+</table>
